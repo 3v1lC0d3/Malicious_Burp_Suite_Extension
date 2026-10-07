@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // 1. AGREGA ESTA LÍNEA (Es la API de Burp Suite para crear la extensión)
+    compileOnly 'net.portswigger.burp.extensions:montoya-api:2024.7'
+
+    testImplementation platform('org.junit:junit-bom:6.0.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+// 2. AGREGA ESTE BLOQUE (Para que Burp reconozca el nombre de tu archivo al compilar)
+jar {
+    archiveFileName = 'MiExtensionBurp.jar'
+}
+
+test {
+    useJUnitPlatform()
+}
