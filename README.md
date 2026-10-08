@@ -26,7 +26,7 @@ All testing should be performed exclusively in isolated laboratory environments 
 
 ## Demostration
 
-<img width="925" height="486" alt="image" src="https://github.com/user-attachments/assets/93cd9bf7-e4bf-435c-a217-2d95bb9c7b40" />
+<img width="925" height="486" alt="image" src="./ExtentionImport.png" />
 
 <img width="923" height="457" alt="image" src="https://github.com/user-attachments/assets/682feb23-781a-4435-97f0-eca4cb80490a" />
 
